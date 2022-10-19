@@ -18,12 +18,13 @@
     ></script>
   </head>
   <body>
-    <form id="search-form">
-      <input type="text" placeholder="Enter a city.." />
-      <input type="submit" value="Search" />
-    </form>
-    <hr />
     <div class="conteiner">
+      <form id="search-form">
+        <input type="text" placeholder="Enter a city.." />
+        <input type="submit" value="Search" />
+      </form>
+      <hr />
+
       <h1>Amsterdam</h1>
       <div class="informations">
         Monday 17:00, few clouds <br />
@@ -31,12 +32,41 @@
       </div>
       <div class="current-temperature"><span class="temp">12</span>°C</div>
       <div class="row">
-        <div class="col-2">Tue <br />19°C</div>
-        <div class="col-2">Wed<br />20°C</div>
-        <div class="col-2">Thu<br />15°C</div>
-        <div class="col-2">Fri<br />17°C</div>
-        <div class="col-2">Sat<br />17°C</div>
-        <div class="col-2">San<br />18°C</div>
+        <div class="col-2">
+          <div class="forecast-time">Tue</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+          <div class="forecast-temperature">19°C</div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-time">Wed</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+
+          <div class="forecast-temperature">19°C</div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-time">Thu</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+
+          <div class="forecast-temperature">19°C</div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-time">Fri</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+
+          <div class="forecast-temperature">19°C</div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-time">Sat</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+
+          <div class="forecast-temperature">19°C</div>
+        </div>
+        <div class="col-2">
+          <div class="forecast-time">San</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+
+          <div class="forecast-temperature">19°C</div>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
