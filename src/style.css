@@ -1,0 +1,49 @@
+.background-one {
+  background-color: #f9f7fe;
+}
+.background-second {
+  background-color: #ffffff;
+}
+.search-form {
+  max-width: 700px;
+  border-radius: 20px;
+}
+.conteiner {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 20px 40px 40px;
+  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.current-temperature {
+  position: absolute;
+  right: 240px;
+  top: 150px;
+  font-size: 25px;
+}
+.temp {
+  font-size: 45px;
+}
+.row {
+  padding-top: 40px;
+  text-align: center;
+}
+.forecast-time,
+.informations {
+  color: rgba(39, 33, 66, 0.4);
+}
+.forecast-temperature-min {
+  color: rgba(141, 141, 241, 0.7);
+}
+.forecast-temperature-max {
+  color: rgb(78, 78, 223, 0.9);
+}
+.current-day {
+  color: rgb(78, 78, 223, 0.9);
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
