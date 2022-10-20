@@ -4,10 +4,10 @@
 .background-second {
   background-color: #ffffff;
 }
-.search-form {
-  max-width: 700px;
-  border-radius: 20px;
+.form-control {
+  max-width: 400px;
 }
+
 .conteiner {
   max-width: 700px;
   margin: 60px auto;
@@ -19,10 +19,9 @@
 }
 
 .current-temperature {
-  position: absolute;
-  right: 240px;
-  top: 150px;
-  font-size: 25px;
+  position: relative;
+  left: 500px;
+  top: -80px;
 }
 .temp {
   font-size: 45px;

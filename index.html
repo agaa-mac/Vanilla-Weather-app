@@ -24,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Mono&family=Poppins:wght@500&family=Roboto:ital,wght@1,100&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body class="background-one">
     <div class="conteiner background-second">
@@ -33,12 +34,18 @@
       </form>
       <hr />
 
-      <h1>Amsterdam</h1>
+      <h1 id="city">Amsterdam</h1>
       <div class="informations">
-        <span class="current-day">Monday 17:00,</span> few clouds <br />
-        Humidity: 60%, Wind: 4.00 hm/h
+        <span class="current-day">Monday 17:00,</span>
+        <span id="description">few clouds</span> <br />
+        Humidity: <span id="humidity">60</span>%, Wind:<span id="wind"
+          >4.00
+        </span>
+        hm/h
       </div>
-      <div class="current-temperature"><span class="temp">12</span>°C</div>
+      <div class="current-temperature">
+        <span class="temp" id="temp">12</span>°C
+      </div>
       <div class="row">
         <div class="col-2">
           <div class="forecast-time">Tue</div>
