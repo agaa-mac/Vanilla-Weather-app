@@ -30,7 +30,10 @@
 .temp {
   font-size: 50px;
 }
-
+.units {
+  position: relative;
+  top: -22px;
+}
 .forecast-time,
 .informations {
   color: rgba(39, 33, 66, 0.4);
