@@ -40,6 +40,12 @@ function displayTemperature(response) {
   wind.innerHTML = response.data.wind.speed;
   let date = document.querySelector("#date");
   date.innerHTML = formatDate(response.data.dt * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 let city = "Amsterdam";
 let apiKey = "64469ac67e6dc941feb5b50915a18dc7";
