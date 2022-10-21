@@ -29,9 +29,22 @@
   <body class="background-one">
     <div class="conteiner background-second">
       <form class="search-form" id="search-form">
-        <input type="text" placeholder="Enter a city.." />
-        <input type="submit" value="Search" />
+        <div class="row enter-city">
+          <div class="col-9 enter-city">
+            <input
+              type="text"
+              placeholder="Enter a city.."
+              class="form-control"
+              id="city-input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-primary w-100" />
+          </div>
+        </div>
       </form>
+
       <hr />
 
       <h1 id="city">Amsterdam</h1>
@@ -47,6 +60,7 @@
         <span>
           <img
             id="icon"
+            class="icon"
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
           /> </span
         ><span class="temp" id="temp">12</span>°C
