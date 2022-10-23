@@ -58,5 +58,38 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Monady",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+          <div class="forecast-time">${day}</div>
+          <div class="forecast-image"><i class="fa-solid fa-sun"></i></div>
+          <div class="forecast-temperature">
+            <span class="forecast-temperature-max">22°</span>
+            <span class="forecast-temperature-min">15°</span>
+          </div>
+        </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
